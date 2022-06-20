@@ -22,7 +22,8 @@ class CupcakeManager extends AbstractManager
 
     public function selectByCupcakeId(int $idCupcake): array
     {
-        $statement = $this->pdo->prepare("SELECT * FROM " . self::TABLE . " INNER JOIN accessory ON "
+        $statement = $this->pdo->prepare("SELECT *, cupcake.name as name, accessory.name as accessory FROM "
+        . self::TABLE . " INNER JOIN accessory ON "
         . self::TABLE . ".accessory_id=accessory.id WHERE " . self::TABLE . ".id=:id");
         $statement->bindValue('id', $idCupcake, \PDO::PARAM_INT);
         $statement->execute();
