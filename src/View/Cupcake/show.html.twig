@@ -1,0 +1,18 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+    <div class="main-container show-cupcake" style="background-color: {{ color }};">
+        <h1 style="color: {{ invert_color }};">{{ cupcake.name }}</h1>
+        <div class="cupcake-list" id="cupcake-list">
+            <div class="cupcake-item">
+                {% include 'Cupcake/_cupcake.html.twig' %}
+            </div>
+        </div>
+        <div class="accessories">
+            <div class="card">
+                <h2>{{ cupcake.accessory | capitalize }}</h2>
+                <img src="{{ cupcake.url }}" alt="{{ cupcake.accessory }}">
+            </div>
+        </div>
+    </div>
+{% endblock %}

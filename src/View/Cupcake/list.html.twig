@@ -1,0 +1,17 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+    <script src="/assets/js/script.js"></script>
+    <div class="main-container">
+        <h1>My cupcakes</h1>
+        <div class="cupcake-list" id="cupcake-list">
+            {% for cupcake in cupcakes %}
+                <div class="cupcake-item">
+                    <a href="/cupcake/show/{{ cupcake.id }}">{% include 'Cupcake/_cupcake.html.twig' %}</a>
+                </div>
+            {% else %}
+                <div>You have no cupcake yet !</div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

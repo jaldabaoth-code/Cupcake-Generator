@@ -1,0 +1,15 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+    <div class="main-container">
+        <h1>My accessories</h1>
+        <div class="accessories">
+            {% for accessory in accessories %}
+                <div class="card">
+                    <h2>{{ accessory.name | capitalize }}</h2>
+                    <img src="{{ accessory.url }}" alt="{{ accessory.name }}">
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
