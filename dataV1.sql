@@ -2,7 +2,7 @@
 DROP TABLE IF EXISTS `accessory`;
 CREATE TABLE `accessory` (
     `id` int NOT NULL AUTO_INCREMENT,
-    `name` varchar(255) DEFAULT NULL,
+    `accessory` varchar(255) DEFAULT NULL,
     `url` varchar(255) DEFAULT NULL,
     PRIMARY KEY (`id`)
 );
