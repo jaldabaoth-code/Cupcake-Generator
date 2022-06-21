@@ -13,8 +13,8 @@
 0. Run `composer install`
 0. Create a database (e.g. named `checkpoint2`) : `create database database_name;`
 0. Import the file <b>dataV1.sql</b> (at the root of the project) in your mysql 
-0. Create *config/db.php* from *config/db.php.dist* file and add your DB parameters<br/>
-    Don't delete the *.dist* file, it must be kept
+0. Create <b>*config/db.php*</b> from <b>*config/db.php.dist*</b> file and add your DB parameters<br/>
+    Don't delete the <b>*.dist*</b> file, it must be kept
 ```php
 define('APP_DB_HOST', 'your_db_host');
 define('APP_DB_NAME', 'your_db_name');
