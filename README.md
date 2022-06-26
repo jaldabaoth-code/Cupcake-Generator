@@ -15,12 +15,12 @@
 0. Import the file <b>dataV1.sql</b> (at the root of the project) in your SQL server
 0. Create <b>*config/db.php*</b> from <b>*config/db.php.dist*</b> file and add your DB parameters<br/>
     Don't delete the <b>*.dist*</b> file, it must be kept
-```php
-define('APP_DB_HOST', 'your_db_host');
-define('APP_DB_NAME', 'your_db_name');
-define('APP_DB_USER', 'your_db_user_wich_is_not_root');
-define('APP_DB_PWD', 'your_db_password');
-```
+    ```php
+    define('APP_DB_HOST', 'your_db_host');
+    define('APP_DB_NAME', 'your_db_name');
+    define('APP_DB_USER', 'your_db_user_wich_is_not_root');
+    define('APP_DB_PWD', 'your_db_password');
+    ```
 0. Run the internal PHP webserver with `php -S localhost:8000 -t public/`<br/>
     The option `-t` with `public` as parameter means your localhost will target the `/public` folder
 0. Go to `localhost:8000` with your favorite browser
