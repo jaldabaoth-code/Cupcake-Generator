@@ -1,4 +1,4 @@
-<h1>Cupcake Generator (PHP Checkpoint 2, WCS)</h1>
+<h1>Cupcake Generator (PHP Checkpoint 2, WCS Web PHP)</h1>
 
 ### The goal is to create your own uniques "Cupcakes"
 
