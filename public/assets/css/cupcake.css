@@ -1,5 +1,5 @@
 .cupcake-container {
-    --cupcake-size:200px;
+    --cupcake-size: 200px;
     --cupcake-basis: calc(var(--cupcake-size) / 2);
     display: flex;
     flex-direction: column;
@@ -88,7 +88,7 @@
 }
 
 .eyes > div {
-    --eye-size:20px;
+    --eye-size: 20px;
     width: var(--eye-size);
     height: var(--eye-size);
     border-radius:  var(--eye-size) var(--eye-size) 4px 4px;
@@ -101,7 +101,7 @@
 }
 
 .eyes > div::before {
-    content:'';
+    content: '';
     width: calc(var(--eye-size) / 3);
     height: calc(var(--eye-size) / 2);
     border-radius: var(--eye-size);
@@ -109,7 +109,7 @@
 }
 
 .eyes > div:hover {
-    height:0;
+    height: 0;
 }
 
 .eyes > div:hover::before {
@@ -121,7 +121,7 @@
 }
 
 .mouth {
-    --mouth-size:50%;
+    --mouth-size: 50%;
     display: flex;
     justify-content: center;
     width: var(--mouth-size);
@@ -132,7 +132,7 @@
 }
 
 .mouth:hover::before {
-    content:'';
+    content: '';
     transform: translateY(calc(100% + 2px));
     width: 50%;
     height: 100%;
@@ -141,7 +141,7 @@
 }
 
 .cupcake img {
-    --image-size:50%;
+    --image-size: 50%;
     width: var(--image-size);
     top: 0;
     left: 0;

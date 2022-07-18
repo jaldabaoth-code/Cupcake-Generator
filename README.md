@@ -9,7 +9,8 @@
 
 ### Steps
 
-0. Clone the repo from Github
+0. Clone the repo from GitHub : `git clone git@github.com:jaldabaoth-code/Cupcake-Generator.git`
+0. Enter the directory : `cd Cupcake-Generator`
 0. Run `composer install`
 0. Create a database (e.g. named `checkpoint2`) : `create database database_name;`
 0. Import the last version of the <b>dataVx.sql</b> file (at the root of the project) in your SQL server

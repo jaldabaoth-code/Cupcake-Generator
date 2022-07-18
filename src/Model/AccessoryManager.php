@@ -5,6 +5,7 @@ namespace App\Model;
 class AccessoryManager extends AbstractManager
 {
     public const TABLE = 'accessory';
+
     public function insert(array $accessory)
     {
         $statement = $this->pdo->prepare("INSERT INTO " . self::TABLE . " (`name`, `url`) VALUES (:name, :url)");

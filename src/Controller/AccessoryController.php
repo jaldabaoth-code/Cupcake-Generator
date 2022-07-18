@@ -11,6 +11,7 @@ use App\Model\AccessoryManager;
 class AccessoryController extends AbstractController
 {
     public const MAX_LENGTH = 255;
+
     /**
      * Display accessory creation page
      *

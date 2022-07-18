@@ -14,7 +14,6 @@ class ColorGenerator
             $green[] = hexdec(substr($color, 3, 2));
             $blue[] = hexdec(substr($color, 5, 2));
         }
-
         $newRed = dechex(intval(array_sum($red) / count($red)));
         $newGreen = dechex(intval(array_sum($green) / count($green)));
         $newBlue = dechex(intval(array_sum($blue) / count($blue)));

@@ -3,8 +3,8 @@
 
 :root {
     --default-cream-color: #ffe868;
-    --background-color:#FAC564;
-    --main-color:#DE467C;
+    --background-color: #FAC564;
+    --main-color: #DE467C;
     --secondary-color: #9D9CDF;
     --light: #fffef7;
     --dark: #2a2929;
@@ -74,6 +74,7 @@ h1 {
     from {
         transform: rotate(0deg);
     }
+
     to {
         transform: rotate(360deg);
     }

@@ -27,13 +27,9 @@ use PDOException;
 class Connection
 {
     private PDO $pdoConnection;
-
     private string $user;
-
     private string $host;
-
     private string $password;
-
     private string $dbName;
 
     /**

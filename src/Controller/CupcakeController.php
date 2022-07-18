@@ -14,6 +14,7 @@ class CupcakeController extends AbstractController
 {
     public const MAX_LENGTH = 255;
     public const COLOR_LENGTH = 7;
+
     /**
      * Display cupcake creation page
      *
@@ -28,7 +29,6 @@ class CupcakeController extends AbstractController
         $cupcake = [];
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $cupcake = array_map('trim', $_POST);
-
             if (empty($cupcake['name'])) {
                 $errors[] = 'Please enter a Cupcake name.';
             } elseif (strlen($cupcake['name']) > self::MAX_LENGTH) {

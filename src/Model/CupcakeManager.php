@@ -5,6 +5,7 @@ namespace App\Model;
 class CupcakeManager extends AbstractManager
 {
     public const TABLE = 'cupcake';
+
     public function insert(array $cupcake)
     {
         $date = date('Y-m-d H:i:s');

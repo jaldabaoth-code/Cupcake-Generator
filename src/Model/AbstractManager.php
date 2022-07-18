@@ -11,7 +11,6 @@ use PDO;
 abstract class AbstractManager
 {
     protected PDO $pdo;
-
     public const TABLE = '';
 
     public function __construct()
@@ -29,7 +28,6 @@ abstract class AbstractManager
         if ($orderBy) {
             $query .= ' ORDER BY ' . $orderBy . ' ' . $direction;
         }
-
         return $this->pdo->query($query)->fetchAll();
     }
 
@@ -43,7 +41,6 @@ abstract class AbstractManager
         $statement = $this->pdo->prepare("SELECT * FROM " . static::TABLE . " WHERE id=:id");
         $statement->bindValue('id', $id, \PDO::PARAM_INT);
         $statement->execute();
-
         return $statement->fetch();
     }
 
