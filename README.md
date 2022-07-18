@@ -24,7 +24,7 @@
     ```
 0. Run the internal PHP webserver with `php -S localhost:8000 -t public/`<br/>
     The option `-t` with `public` as parameter means your localhost will target the `/public` folder
-0. Go to `localhost:8000` with your favorite browser
+0. Go to <b>localhost:8000</b> with your favorite browser
 0. Clic on "Intructions" button
 
 ### Reminder : How does URL routing work ?
